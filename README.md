@@ -15,7 +15,7 @@ Third-party APIs allow developers to access their data and funtionality by makin
 
 ### Goals and Requirements
 
-My challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS. 
+My challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
 
 ### Link to Website
 
