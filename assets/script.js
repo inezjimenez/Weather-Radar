@@ -15,15 +15,47 @@ let search = (city_name) =>  {
         console.log(response)
         return response.json()
     }).then(function(data){
-        //now retriving data
+        //now retrieving data
+
+       let weather = data.weather[0]
+       console.log(weather)
+
        let main = data.main
        console.log(main)
+       
+       let wind = data.wind
+       console.log(wind)
+
+       let city = main.name
+       let cityHTML = document.createElement("city-name")
+       cityHTML.innerHTML = city
+       console.log(city_name)
+       document.querySelector(".city").innerText ="Weather in " + city_name;
+
+       let temp = main.temp
+       let tempHTML = document.createElement("temp")
+       tempHTML.innerHTML = temp
+       document.querySelector(".temp").innerText = temp + "°F";
 
        let humidity = main.humidity
-       let humidityHTML = document.querySelector('humidityData')
+       let humidityHTML = document.createElement("humidityData")
        humidityHTML.innerHTML= humidity;
        console.log(humidity)
-        })
+       document.querySelector(".humidity").innerText = "Humidity :" + humidity +"%";
+       
+       let description = weather.description
+       let descriptionHTML = document.createElement("description")
+       descriptionHTML.innerHTML = description
+       console.log(description)
+       document.querySelector(".description").innerText = "" + weather.description;
+
+       let speed = wind.speed
+       let speedHTML = document.createElement("speed")
+       speedHTML.innerHTML= wind
+       console.log(speed)
+       document.querySelector(".speed").innerText = "Wind : " + wind.speed + "mph";
+    })
+    
 } 
 
 // Data Structures

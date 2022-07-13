@@ -7,6 +7,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     background: grey;
     font-size: 120%;
+    background-image: url('https://picsum.photos/2000/?blur=2')
 }
 
 .card {
