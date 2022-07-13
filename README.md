@@ -37,4 +37,4 @@ My challenge is to build a weather dashboard that will run in the browser and fe
 In the search bar, you type in the name of a city and press the search icon. Information such as the description of the weather, temperature and humidity will appear below.
 
 ### Project Demo
-![WeatherRadar](Weather Radar (1).gif)
+![WeatherRadar](assets/Weather Radar (1).gif)
